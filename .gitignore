@@ -5,3 +5,18 @@ bin-int/
 
 # Files
 *.user
+/Hazel/Hazel/vendor/spdlog-1.x/bench
+/Hazel/Hazel/vendor/spdlog-1.x/cmake
+/Hazel/Hazel/vendor/spdlog-1.x/example
+/Hazel/Hazel/vendor/spdlog-1.x/logos
+/Hazel/Hazel/vendor/spdlog-1.x/scripts
+/Hazel/Hazel/vendor/spdlog-1.x/tests
+/Hazel/Hazel/vendor/spdlog-1.x/INSTALL
+/Hazel/Hazel/vendor/spdlog-1.x/CMakeLists.txt
+/Hazel/Hazel/vendor/spdlog-1.x/appveyor.yml
+/Hazel/Hazel/vendor/spdlog-1.x/.travis.yml
+/Hazel/Hazel/vendor/spdlog-1.x/.gitignore
+/Hazel/Hazel/vendor/spdlog-1.x/.gitattributes
+/Hazel/Hazel/vendor/spdlog-1.x/.clang-tidy
+/Hazel/Hazel/vendor/spdlog-1.x/.clang-format
+/Hazel/Hazel/vendor/spdlog-1.x/src
