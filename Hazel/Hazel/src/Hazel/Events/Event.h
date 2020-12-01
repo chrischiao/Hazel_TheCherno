@@ -5,6 +5,11 @@
 
 namespace Hazel {
 
+	// Events in Hazel are currently blocking, meaning when an event occurs it
+	// immediately gets dispatched and must be dealt with right then an there.
+	// For the future, a better strategy might be to buffer events in an event
+	// bus and process them during the "event" part of the update stage.
+
 	enum class EventType
 	{
 		None = 0,
@@ -34,6 +39,7 @@ namespace Hazel {
 	{
 		friend class EventDispatcher;
 	public :
+		bool Handled = false;
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
 		virtual int GetCategoryFlags() const = 0;
@@ -43,8 +49,6 @@ namespace Hazel {
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		bool m_Handled = false;
 	};
 
 	class EventDispatcher
@@ -61,7 +65,7 @@ namespace Hazel {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled = func(*(T*)&m_Event);
+				m_Event.Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
