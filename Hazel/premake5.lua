@@ -1,5 +1,6 @@
 workspace "Hazel"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -20,7 +21,6 @@ include "Hazel/vendor/GLFW" --this is for premake .lua
 include "Hazel/vendor/Glad"
 include "Hazel/vendor/imgui"
 
-startproject "Sandbox"
 
 project "Hazel"
 	location "Hazel"
