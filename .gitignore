@@ -1,6 +1,6 @@
 # Binaries
 bin/
-!Hazel/vendor/premake/bin/
+!Hazel/vendor/bin
 bin-int/
 
 # Visual Studio files and folder
