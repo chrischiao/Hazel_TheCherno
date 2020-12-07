@@ -20,3 +20,4 @@ bin-int/
 /Hazel/Hazel/vendor/spdlog-1.x/.clang-tidy
 /Hazel/Hazel/vendor/spdlog-1.x/.clang-format
 /Hazel/Hazel/vendor/spdlog-1.x/src
+/Hazel/Sandbox/imgui.ini
