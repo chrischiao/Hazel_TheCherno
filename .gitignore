@@ -1,10 +1,16 @@
-# Directories
-.vs/
+# Binaries
 bin/
+!Hazel/vendor/premake/bin/
 bin-int/
 
-# Files
-*.user
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+
 /Hazel/Hazel/vendor/spdlog-1.x/bench
 /Hazel/Hazel/vendor/spdlog-1.x/cmake
 /Hazel/Hazel/vendor/spdlog-1.x/example
@@ -21,3 +27,5 @@ bin-int/
 /Hazel/Hazel/vendor/spdlog-1.x/.clang-format
 /Hazel/Hazel/vendor/spdlog-1.x/src
 /Hazel/Sandbox/imgui.ini
+
+
