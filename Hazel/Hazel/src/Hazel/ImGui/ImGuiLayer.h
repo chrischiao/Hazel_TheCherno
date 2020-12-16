@@ -14,6 +14,22 @@ namespace Hazel {
 		ImGuiLayer();
 		~ImGuiLayer();
 
+		virtual void OnAttach() override;
+		virtual void OnDetach() override;
+		virtual void OnImGuiRender() override;
+
+		void Begin();
+		void End();
+	private:
+		float m_Time = 0.0f;
+	};
+
+	/*class HAZEL_API ImGuiLayer : public Layer
+	{
+	public:
+		ImGuiLayer();
+		~ImGuiLayer();
+
 		void OnAttach();
 		void OnDetach();
 		void OnUpdate();
@@ -29,6 +45,6 @@ namespace Hazel {
 		bool OnWindowResizeEvent(WindowResizeEvent& e);
 	private:
 		float m_Time = 0.0f;
-	};
+	};*/
 
 }
